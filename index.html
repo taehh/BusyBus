@@ -1,143 +1,164 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BusyBus</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
 <!---Nav--->
-    <div class="container">
+    <section class="container">
       <nav>
         <div class="status_bar">
-        <img src="images/status_bar.jpg" alt="status_bar" style="width:100%;"></img>
-        <div class="centered">Washington / State</div>
+          <img src="images/status_bar.jpg" alt="status_bar" style="width:100%;"></img>
+        </div>
+          <h1> Washington / State </h1>
+          <div class="arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
       </nav>
-    </div>
+    </section>
 <!---filter by bus --->
-    <div class="fiter">
-      <img src="images/filter.jpg" alt="filter"></img>
-    </div>
+    <section class="filter">
+      <h3>Filter by bus line:</h3>
+      <div class="custom-select" style="width:355px;" font-size:20px;"">
+        <select>
+          <option value="0">Click to select bus:</option>
+          <option value="1">60</option>
+          <option value="2">124</option>
+          <option value="3">151</option>
+          <option value="4">J14</option>
+          <option value="5">6x</option>
+          <option value="6">4</option>
+          <option value="7">20</option>
+          <option value="8">157</option>
+        </select>
+      </div>
+    </section>
 <!---picture of map--->
-    <div class="map">
+    <section class="map">
       <img src="images/map.jpg" alt="map"></img>
-    </div>
+    </section>
 <!---bus info header--->
-    <div class="bus_bar">
+    <section class="bus_bar">
       <img src="images/bus_bar.jpg" alt="bus_bar"></img>
-    </div>
+      <div class="bus_num">Bus No</div>
+      <div class="bus_dest">Destination</div>
+      <div class="bus_eta">ETA</div>
+    </section>
 <!---eastbound--->
-    <div class="bus_list">
+    <section class="bus_list">
       <div class="direction">
         <h2>Eastbound</h2>
       </div>
-      <div class="bus_info">
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">60</div>
-          <div class="destination">Randolph/Harbor Dr</div>
-          <div class="nested">
+          <li class="number">60</li>
+          <li class="destination">Randolph/Harbor Dr</li>
+          <li class="nested">
             <div class="eta">2 min</div>
             <div class="frequency">Every 20 min</div>
-          </div>
+          </li>
         </div>
-      </div>
-      <div class="bus_info">
+      </ul>
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">124</div>
-          <div class="destination">Navy Pier</div>
-          <div class="nested">
+          <li class="number">124</li>
+          <li class="destination">Navy Pier</li>
+          <li class="nested">
             <div class="eta">5 min</div>
             <div class="frequency">Every 10 min</div>
-          </div>
+          </li>
         </div>
-      </div>
+      </ul>
  <!---Northbound--->
       <div class="direction">
         <h2>Northbound</h2>
       </div>
-      <div class="bus_info">
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">151</div>
-          <div class="destination">Devon/Clark</div>
-          <div class="nested">
+          <li class="number">151</li>
+          <li class="destination">Devon/Clark</li>
+          <li class="nested">
             <div class="eta">9 min</div>
             <div class="frequency">Every 15 min</div>
-          </div>
+          </li>
         </div>
-      </div>
+      </ul>
  <!---Southbound--->
       <div class="direction">
         <h2>Southbound</h2>
       </div>
-      <div class="bus_info">
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">J14</div>
-          <div class="destination">103rd/Stony Island</div>
-          <div class="nested">
+          <li class="number">J14</li>
+          <li class="destination">103rd/Stony Island</li>
+          <li class="nested">
             <div class="eta">12 min</div>
             <div class="frequency">Every 15 min</div>
-          </div>
+          </li>
         </div>
-      </div>
-      <div class="bus_info">
+      </ul>
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">124</div>
-          <div class="destination">Navy Pier</div>
-          <div class="nested">
+          <li class="number">124</li>
+          <li class="destination">Navy Pier</li>
+          <li class="nested">
             <div class="eta">6 min</div>
             <div class="frequency">Every 10 min</div>
-          </div>
+          </li>
         </div>
-      </div>
+      </ul>
  <!---Reroute--->
       <div class="direction">
         <h2>Reroute</h2>
       </div>
-      <div class="bus_info">
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">6x</div>
-          <div class="destination">Jackson Park Express</div>
-          <div class="nested">
+          <li class="number">6x</li>
+          <li class="destination">Jackson Park Express</li>
+          <li class="nested">
             <div class="eta_center">N/A</div>
             <div class="frequency"></div>
-          </div>
+          </li>
         </div>
-      </div>
+      </ul>
  <!---Out of Service--->
       <div class="direction">
         <h2>Out of Service</h2>
       </div>
-      <div class="bus_info">
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">4</div>
-          <div class="destination">Cottage Grove</div>
-          <div class="nested">
+          <li class="number">4</li>
+          <li class="destination">Cottage Grove</li>
+          <li class="nested">
             <div class="eta">Resumes</div>
             <div class="frequency">12:10am</div>
-          </div>
+          </li>
         </div>
-      </div>
-      <div class="bus_info">
+      </ul>
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">20</div>
-          <div class="destination">Madison</div>
-          <div class="nested">
+          <li class="number">20</li>
+          <li class="destination">Madison</li>
+          <li class="nested">
             <div class="eta">Resumes</div>
             <div class="frequency">12:10am</div>
-          </div>
+          </li>
         </div>
-      </div>
-      <div class="bus_info">
+      </ul>
+      <ul class="bus_info">
         <div class="grid">
-          <div class="number">157</div>
-          <div class="destination">Streeterville/Taylor</div>
-          <div class="nested">
+          <li class="number">157</li>
+          <li class="destination">Streeterville/Taylor</li>
+          <li class="nested">
             <div class="eta">Resumes</div>
             <div class="frequency">6:00am</div>
-          </div>
+          </li>
         </div>
-      </div>
+      </ul>
     </section>
   </body>
 </html>

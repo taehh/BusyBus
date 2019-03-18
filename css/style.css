@@ -54,7 +54,6 @@ h3 {
 
 .container {
   box-sizing: border-box;
-  position: relative;
   width: 375px;
   margin: 0 auto;
   background-color: white;
@@ -64,11 +63,12 @@ h3 {
   position: absolute;
 }
 
-.arrow-left {
-  position: static;
-  padding-left: 10px;
-  font-size: 23px;
+
+.fa-chevron-left {
   color: #0464CB;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  font-size: 20px;
 }
 
 .filter {

@@ -28,12 +28,12 @@ nav {
 }
 
 h1 {
-  font-weight: lighter;
-  font-size: 1em;
+  display: inline-block;
+  padding-left: 99px;
   font-weight: 400;
+  font-size: 1em;
   text-transform: capitalize;
   text-align: center;
-  padding-top: 30px;
   color: #000000;
 }
 
@@ -63,12 +63,12 @@ h3 {
   position: absolute;
 }
 
-
-.fa-chevron-left {
+.arrow_left {
+  display: inline-block;
+  font-size: 1em;
   color: #0464CB;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  font-size: 20px;
+  padding-top: 35px;
+  padding-left: 7px;
 }
 
 .filter {
@@ -90,7 +90,7 @@ h3 {
 
 .custom-select select{
   padding: 5px 8px;
-  width: 130%;
+  width: 100%;
   border: none;
   box-shadow: none;
   background: transparent;
@@ -109,7 +109,7 @@ h3 {
   top: 8px;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
+  border-left: 20px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #f00;
 }

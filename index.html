@@ -14,42 +14,41 @@
       <div class="status_bar">
         <img src="images/status_bar.jpg" alt="status_bar" style="width:100%;"></img>
       </div>
-      <div class="header">
-        <div class="arrow_left">
-          <i class="fas fa-chevron-left"></i>
-        </div>
-        <h1> Washington / State </h1>
-      </div>
     </nav>
   </section>
+  <header>
+    <div class="arrow_left">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <h1> Washington / State </h1>
+    </div>
+  </header>
 <!---filter by bus --->
     <section class="filter">
       <h3>Filter by bus line:</h3>
-      <div class="custom-select" style="width:355px;" font-size:20px;"">
-        <select>
-          <option value="0">Click to select bus:</option>
-          <option value="1">60</option>
-          <option value="2">124</option>
-          <option value="3">151</option>
-          <option value="4">J14</option>
-          <option value="5">6x</option>
-          <option value="6">4</option>
-          <option value="7">20</option>
-          <option value="8">157</option>
-        </select>
-      </div>
+      <select class="custom-select">
+        <option value="0">Click to select bus:</option>
+        <option value="1">60</option>
+        <option value="2">124</option>
+        <option value="3">151</option>
+        <option value="4">J14</option>
+        <option value="5">6x</option>
+        <option value="6">4</option>
+        <option value="7">20</option>
+        <option value="8">157</option>
+      </select>
     </section>
 <!---picture of map--->
     <section class="map">
       <img src="images/Map.jpg" alt="map"></img>
     </section>
 <!---bus info header--->
-    <section class="bus_bar">
+    <ul class="bus_bar">
       <img src="images/bus_bar.jpg" alt="bus_bar"></img>
-      <div class="bus_num">Bus No</div>
-      <div class="bus_dest">Destination</div>
-      <div class="bus_eta">ETA</div>
-    </section>
+      <li class="bus_num">Bus No</li>
+      <li class="bus_dest">Destination</li>
+      <li class="bus_eta">ETA</li>
+    </ul>
 <!---eastbound--->
     <section class="bus_list">
       <div class="direction">

@@ -22,14 +22,19 @@ body {
 
 nav {
   background-color: #FFFFFF;
-  height: 3.8em;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding-top: 2px;
 }
 
 h1 {
   display: inline-block;
   padding-left: 99px;
+  padding-bottom: 10px;
   font-weight: 400;
   font-size: 1em;
   text-transform: capitalize;
@@ -65,7 +70,7 @@ h3 {
 
 .arrow_left {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #0464CB;
   padding-top: 35px;
   padding-left: 7px;
@@ -80,7 +85,8 @@ h3 {
 
 .custom-select {
   border: 1px solid #ccc;
-  width: 250px;
+  font-size: 14px;
+  width: 355px;
   border-radius: 3px;
   overflow: hidden;
   background: #ebebec;
